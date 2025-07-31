@@ -29,11 +29,6 @@ jobs:
           node-version: lts/*
           cache: 'npm'
 
-      - name: Install dependencies
-        run: |
-          npm ci
-          npm list --depth=0
-
       - name: Build project
         run: |
           echo "Starting build process..."
